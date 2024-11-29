@@ -1,9 +1,9 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Users API",
+    "title": "Swagger API",
     "version": "1.0.0",
-    "description": "Users API"
+    "description": "First swagger file"
   },
   "host": "localhost:3000",
   "basePath": "/api/users",
