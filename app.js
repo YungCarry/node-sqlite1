@@ -2,6 +2,10 @@ import express from "express";
 import cors from "cors";
 import { initializeDB } from "./database.js";
 import usersRouter from "./routes/users.js";
+import swaggerUI from 'swagger-ui-express';
+import {readFile} from 'fs/promises';
+
+const swaggerDocs = JSON.parse(await readFile(new URL('./swaggerDocs.json', import.meta.url)));
 
 const app = express();
 
